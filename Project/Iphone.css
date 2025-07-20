@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 200px;
+}
+.iphone-frame, .iphone-15-pro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+}
+.iphone-frame{
+    width: 399px;   
+    height: 849px;
+    border: 2px solid #000;
+    background-color: rgb(150, 150, 150);
+}
+.iphone-15-pro{
+    width: 390px;   
+    height: 840px;
+    border: 2px solid #000;
+    background: #000;
+} 
+.iphone-15-pro-pixel{
+    width: 381px;
+    height: 828px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    background-color: #fff;
+    overflow: hidden;
+    background-image: url(../images/car.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   position: relative;
+}
+.dynamic-island{
+    margin-top: 10px;
+    height: 40px;
+    width: 140px;
+    border-radius: 50px;
+    border: 3px solid #000;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+}
+.dynamic-island:hover{
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    background-color: blue;
+}
+.front-camera{
+    width: 40px;
+    height: 35px;
+    border: 5px solid #000;
+    border-radius: 200px;
+    background-color: #fff;
+}
+.dynamic-island-video{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 50px;
+}
+.iphone-content{
+   padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iphone-content{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 4px;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+.iphone-content > div:nth-child(1){
+
+    grid-row:2/3;
+    grid-column:1/2;
+
+}
+
+.iphone-content > div:nth-child(2){
+    grid-row:2/3;
+    grid-column:2/3;
+}
+.iphone-content > div:nth-child(2)::after{
+    content:"LinkedIn";
+    color: white;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.iphone-content > div:nth-child(3){
+    grid-row:2/3;
+    grid-column:3/4;
+}
+.iphone-content > div:nth-child(4){
+    grid-row:2/3;
+    grid-column:4/5;
+}
+.iphone-content > div:nth-child(5){
+    grid-row:3/4;
+    grid-column:1/2;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.slide{
+  position: absolute;  
+  top: 500px;
+  width: 120px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.slide {
+  position: absolute;
+  top: 500px;
+  width: 120px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.slide:hover {
+  animation: slide-hover 2s forwards;
+  cursor: pointer;
+
+}
+
+@keyframes slide-hover {
+  from {
+    top: 500px;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+.battery-symbol{
+    position: relative;
+}
+.top{
+    position: absolute;
+    bottom: 260px;
+    left: 270px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction:row-reverse;
+    gap: 10px;
+    list-style: none;
+}
+.top-time {
+  position: absolute;
+  bottom: 260px;
+  left: 50px;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.consloe{
+    position: relative;
+}
+#bar{
+   height: 80px;
+   width: 370px;
+   
+   background-color: #00000081;
+   position: absolute;
+   top: 400px;
+   border-radius: 30px;
+}
+.Bar-consloe{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 100px;
+}
+.Bar-consloe > li:nth-child(1){
+    position: absolute;
+    right: 130px;
+}
+.Bar-consloe > li:nth-child(2){
+    position: absolute;
+    right: 23px;
+}
+.Bar-consloe > li:nth-child(3){
+    position: absolute;
+    right: -65px;
+}
+.Bar-consloe > li:nth-child(4){
+    position: absolute;
+    right: -150px;
+}
