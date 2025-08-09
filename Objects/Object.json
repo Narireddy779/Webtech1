@@ -1,0 +1,21 @@
+[
+    {
+        "City": "Chennai"
+    },
+    {
+        "Population": [
+            {
+                "Name": "Narendra"
+            },
+            {
+                "Age": 25
+            },
+            {
+                "City": "Chennai"
+            }
+        ]
+    },
+    {
+        "Population2": 20000
+    }
+]
