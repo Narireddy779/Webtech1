@@ -11,11 +11,6 @@ let div = document.createElement("div");
 let div1 = document.createElement("div");
 let form = document.createElement("form");
 
-//^default css
-body.style.margin = "0px";
-body.style.padding = "0px";
-body.style.boxSizing = "border-box";
-body.style.fontFamily = "Arial, sans-serif";
 
 //~ Navigation Bar --> set border
 nav.style.border = "2px solid brown";
@@ -39,7 +34,9 @@ div1.style.flexDirection = "column";
 div1.style.justifyContent = "center";
 div1.style.alignItems = "center";
 div1.style.padding = "20px";
-div1.style.background = "#f9f9f9";
+div1.style.background = "#eae9b0ff";
+body.style.backgroundImage = "url(../images/Ram.jpeg)"
+body.style.backgroundSize = "cover"
 
 //? Ul tag -->
 ul.style.display = "flex";
@@ -91,7 +88,7 @@ for (let i = 0; i < fields.length; i++) {
 }
 
 let button = document.createElement("button");
-button.innerText = "Submit";
+button.innerText = "Login";
 button.style.borderRadius = "20px";
 button.style.padding = "10px";
 button.style.border = "none";
